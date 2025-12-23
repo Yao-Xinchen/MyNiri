@@ -1,5 +1,7 @@
 layout {
-    gaps 4
+    background-color "transparent"
+
+    gaps 12
 
     border {
         width 2
