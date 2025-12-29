@@ -5,7 +5,6 @@ spawn-at-startup "bash" "-c" "wl-paste --watch cliphist store &"
 spawn-at-startup "/usr/lib/mate-polkit/polkit-mate-authentication-agent-1"
 // This may be a different path on different distributions, the above is for the arch linux mate-polkit package
 
-
 // If using niri newer than 271534e115e5915231c99df287bbfe396185924d (~aug 17 2025)
 // you can add this to disable built in config load errors since dank shell provides this
 config-notification {
@@ -26,3 +25,5 @@ input {
 include "dms/colors.kdl"
 include "dms/layout.kdl"
 include "dms/binds.kdl"
+include "dms/alttab.kdl"
+include "dms/wpblur.kdl"
