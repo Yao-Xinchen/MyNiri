@@ -23,7 +23,7 @@ input {
 }
 
 include "dms/colors.kdl"
-include "dms/layout.kdl"
+include "dms/mylayout.kdl"
 include "dms/binds.kdl"
 include "dms/alttab.kdl"
 include "dms/wpblur.kdl"

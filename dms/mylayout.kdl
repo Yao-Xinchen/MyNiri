@@ -1,5 +1,7 @@
 layout {
-    gaps 4
+    background-color "transparent"
+
+    gaps 12
 
     border {
         width 2
@@ -9,9 +11,15 @@ layout {
         width 2
     }
 }
+
 window-rule {
     geometry-corner-radius 20
     clip-to-geometry true
     tiled-state true
     draw-border-with-background false
 }
+
+// window-rule {
+//     match is-active=false
+//     opacity 0.96
+// }
