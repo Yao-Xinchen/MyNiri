@@ -11,6 +11,12 @@ config-notification {
     disable-failed
 }
 
+prefer-no-csd
+
+hotkey-overlay {
+    skip-at-startup
+}
+
 input {
     keyboard {
         repeat-delay 250
