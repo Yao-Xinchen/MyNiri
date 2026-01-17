@@ -1,5 +1,5 @@
 // Required for clipboard history integration
-spawn-at-startup "bash" "-c" "wl-paste --watch cliphist store &"
+// spawn-at-startup "bash" "-c" "wl-paste --watch cliphist store &"
 
 // Recommended (must install polkit-mate before hand) for elevation prompts
 spawn-at-startup "/usr/lib/mate-polkit/polkit-mate-authentication-agent-1"
@@ -20,7 +20,7 @@ hotkey-overlay {
 input {
     keyboard {
         repeat-delay 250
-        repeat-rate 30
+        repeat-rate 40
     }
 
     mouse {
@@ -29,7 +29,9 @@ input {
 }
 
 include "dms/colors.kdl"
-include "dms/mylayout.kdl"
+include "dms/layout.kdl"
 include "dms/binds.kdl"
 include "dms/alttab.kdl"
 include "dms/wpblur.kdl"
+include "dms/cursor.kdl"
+include "dms/outputs.kdl"
