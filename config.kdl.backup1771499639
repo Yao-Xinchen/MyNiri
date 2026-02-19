@@ -28,6 +28,13 @@ input {
     }
 }
 
+window-rule {
+    match app-id="steam_app_default"
+//     match app-id="explorer.exe"
+//     match app-id="rsi launcher.exe"
+    open-floating false
+}
+
 include "dms/colors.kdl"
 include "dms/layout.kdl"
 include "dms/binds.kdl"
@@ -35,4 +42,3 @@ include "dms/alttab.kdl"
 include "dms/wpblur.kdl"
 include "dms/cursor.kdl"
 include "dms/outputs.kdl"
-include "dms/windowrules.kdl"

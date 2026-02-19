@@ -265,11 +265,11 @@ binds {
     Mod+Ctrl+R { reset-window-height; }
     Mod+F { maximize-column; }
     Mod+Shift+F { fullscreen-window; }
-    Mod+Alt+F { toggle-window-floating; }
+    Mod+Ctrl+F { toggle-window-floating; }
 
     // Expand the focused column to space not taken up by other fully visible columns.
     // Makes the column "fill the rest of the space".
-    Mod+Ctrl+F { expand-column-to-available-width; }
+    Mod+Alt+F { expand-column-to-available-width; }
 
     Mod+C { center-column; }
 
@@ -332,4 +332,7 @@ binds {
     // Powers off the monitors. To turn them back on, do any input like
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
+
+    // AI Panel
+    // Mod+A { spawn "dms" "ipc" "call" "plugins" "toggle" "aiAssistant"; }
 }
