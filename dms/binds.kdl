@@ -22,7 +22,7 @@ binds {
     Mod+P hotkey-overlay-title="Notepad" {
         spawn "dms" "ipc" "call" "notepad" "toggle";
     }
-    Super+Alt+L hotkey-overlay-title="Lock Screen" {
+    Mod+Alt+L hotkey-overlay-title="Lock Screen" {
         spawn "dms" "ipc" "call" "lock" "lock";
     }
     Mod+X hotkey-overlay-title="Power Menu" {
@@ -73,13 +73,11 @@ binds {
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
     Mod+T hotkey-overlay-title="Open File Manager: nautilus" { spawn "nautilus"; }
-    // Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
-    // Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
     // For example, this is a standard bind to toggle the screen reader (orca).
-    Super+Alt+S allow-when-locked=true hotkey-overlay-title=null { spawn-sh "pkill orca || exec orca"; }
+    Mod+Alt+S allow-when-locked=true hotkey-overlay-title=null { spawn-sh "pkill orca || exec orca"; }
 
     // Example volume keys mappings for PipeWire & WirePlumber.
     // The allow-when-locked=true property makes them work even when the session is locked.
@@ -243,9 +241,9 @@ binds {
     Mod+Tab { focus-workspace-previous; }
     // Mod+Tab { focus-workspace-down; }
 
-    // Alt+Tab to traverse windows in the same workspace (with looping)
-    Alt+Tab hotkey-overlay-title="Next Window" { focus-column-right-or-first; }
-    Alt+Shift+Tab hotkey-overlay-title="Previous Window" { focus-column-left-or-last; }
+    // // Alt+Tab to traverse windows in the same workspace (with looping)
+    // Alt+Tab hotkey-overlay-title="Next Window" { focus-column-right-or-first; }
+    // Alt+Shift+Tab hotkey-overlay-title="Previous Window" { focus-column-left-or-last; }
 
     // The following binds move the focused window in and out of a column.
     // If the window is alone, they will consume it into the nearby column to the side.
@@ -261,9 +259,9 @@ binds {
     Mod+R { switch-preset-column-width; }
     // Cycling through the presets in reverse order is also possible.
     // Mod+R { switch-preset-column-width-back; }
-    Mod+Shift+R { switch-preset-window-height; }
-    Mod+Ctrl+R { reset-window-height; }
+    Mod+E { switch-preset-window-height; }
     Mod+F { maximize-column; }
+    Mod+D { reset-window-height; }
     Mod+Shift+F { fullscreen-window; }
     Mod+Ctrl+F { toggle-window-floating; }
 
@@ -308,8 +306,8 @@ binds {
     // Mod+Space       { switch-layout "next"; }
     // Mod+Shift+Space { switch-layout "prev"; }
 
-    Print { screenshot; }
-    Ctrl+Print { screenshot-screen; }
+    Print { screenshot show-pointer=false; }
+    Ctrl+Print { screenshot-screen show-pointer=false; }
     Alt+Print { screenshot-window; }
     Mod+Shift+C {
         spawn "dms" "color" "pick" "-a";
