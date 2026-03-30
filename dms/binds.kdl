@@ -100,6 +100,7 @@ binds {
     Mod+O repeat=false { toggle-overview; }
 
     Mod+Q repeat=false { close-window; }
+    Mod+Shift+Q repeat=false { spawn-sh "kill -9 $(niri msg -j focused-window | jq '.pid')"; }
 
     Mod+Left  { focus-column-left; }
     Mod+Down  { focus-window-down; }
@@ -263,7 +264,7 @@ binds {
     Mod+F { maximize-column; }
     Mod+D { reset-window-height; }
     Mod+Shift+F { fullscreen-window; }
-    Mod+Ctrl+F { toggle-window-floating; }
+    // Mod+Ctrl+F { toggle-window-floating; }
 
     // Expand the focused column to space not taken up by other fully visible columns.
     // Makes the column "fill the rest of the space".
@@ -290,8 +291,8 @@ binds {
     Mod+Shift+Equal { set-window-height "+10%"; }
 
     // Move the focused window between the floating and the tiling layout.
-    // Mod+V       { toggle-window-floating; }
-    // Mod+Shift+V { switch-focus-between-floating-and-tiling; }
+    Mod+Shift+S { toggle-window-floating; }
+    Mod+S { switch-focus-between-floating-and-tiling; }
 
     // Toggle tabbed column display mode.
     // Windows in this column will appear as vertical tabs,
