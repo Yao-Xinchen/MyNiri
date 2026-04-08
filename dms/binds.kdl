@@ -239,8 +239,8 @@ binds {
     // Mod+Ctrl+1 { move-window-to-workspace 1; }
 
     // Switches focus between the current and the previous workspace.
-    Mod+Tab { focus-workspace-previous; }
-    // Mod+Tab { focus-workspace-down; }
+    Mod+Tab { focus-monitor-previous; }
+    Mod+Shift+Tab { move-window-to-monitor-previous; }
 
     // // Alt+Tab to traverse windows in the same workspace (with looping)
     // Alt+Tab hotkey-overlay-title="Next Window" { focus-column-right-or-first; }
