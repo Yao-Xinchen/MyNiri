@@ -309,7 +309,7 @@ binds {
     Ctrl+Print { screenshot-screen show-pointer=false; }
     Alt+Print { screenshot-window; }
     Mod+C {
-        spawn "bash" "-c" "grim -g \"$(slurp)\" /tmp/ocr.png && tesseract /tmp/ocr.png - -l eng 2>/dev/null | wl-copy && notify-send \"OCR Result\" \"$(wl-paste | head -c 80)\"";
+        spawn "bash" "/home/xinchen/.config/niri/util/ocr.sh";
     }
     Mod+Shift+C {
         spawn "dms" "color" "pick" "-a";
