@@ -10,6 +10,9 @@ binds {
     Mod+V hotkey-overlay-title="Clipboard Manager" {
         spawn "dms" "ipc" "call" "clipboard" "toggle";
     }
+    Mod+Shift+V hotkey-overlay-title="Clipboard Viewer" {
+        spawn "quickshell" "-p" "/home/xinchen/.config/niri/util/clipboard";
+    }
     Mod+M hotkey-overlay-title="Task Manager" {
         spawn "dms" "ipc" "call" "processlist" "toggle";
     }
