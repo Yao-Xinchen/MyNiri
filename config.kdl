@@ -36,3 +36,11 @@ include "dms/wpblur.kdl"
 include "dms/cursor.kdl"
 include "dms/outputs.kdl"
 include "dms/windowrules.kdl"
+
+window-rule {
+    opacity 0.96
+    background-effect {
+        blur true
+        xray false
+    }
+}
