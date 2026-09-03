@@ -305,6 +305,10 @@ binds {
     Print { screenshot show-pointer=false; }
     Ctrl+Print { screenshot-screen show-pointer=false; }
     Alt+Print { screenshot-window; }
+
+    // Mod+Print { spawn "dms" "ipc" "call" "screenCaptureToolbar" "toggle"; }
+    Mod+Print { spawn "dms" "ipc" "call" "screenRecorder" "toggleRecording"; }
+
     Mod+C {
         spawn "bash" "/home/xinchen/.config/niri/util/ocr.sh";
     }
